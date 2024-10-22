@@ -1,4 +1,3 @@
-// MyWatchlist.js
 import React, { useState, useEffect } from 'react';
 import './MyWatchlist.css';
 import MovieModal from './MovieModal'; 
@@ -19,8 +18,9 @@ const MyWatchlist = ({ user, watchlist, setWatchlist }) => {
     const removeFromWatchlist = (movieId) => {
         const updatedWatchlist = watchlist.filter(movie => movie.imdbID !== movieId);
         setWatchlist(updatedWatchlist);
-        localStorage.setItem(user.email, JSON.stringify(updatedWatchlist));
+        localStorage.setItem(localStorage.getItem('userEmail'), JSON.stringify(updatedWatchlist));
     };
+
 
     const viewDetails = async (imdbID) => {
         try {
