@@ -9,10 +9,8 @@ const Home = ({ user, watchlist, setWatchlist }) => {
     const [selectedMovie, setSelectedMovie] = useState(null);
     const [errorMessage, setErrorMessage] = useState('');
 
-    // Get API key from environment variable
     const API_KEY = process.env.REACT_APP_OMDB_API_KEY;
 
-    // Validate API Key
     useEffect(() => {
         if (!API_KEY) {
             console.error("API Key is not defined. Please check your .env file.");
