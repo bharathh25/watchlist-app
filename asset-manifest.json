@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/watchlist-app/static/css/main.73dd1aca.css",
+    "main.js": "/watchlist-app/static/js/main.af168f32.js",
+    "static/js/453.53f0a819.chunk.js": "/watchlist-app/static/js/453.53f0a819.chunk.js",
+    "static/media/login-logo.png": "/watchlist-app/static/media/login-logo.5e0ca8bffd229b33f15a.png",
+    "static/media/home-logo.png": "/watchlist-app/static/media/home-logo.c26b7e43b799189dde7b.png",
+    "index.html": "/watchlist-app/index.html",
+    "main.73dd1aca.css.map": "/watchlist-app/static/css/main.73dd1aca.css.map",
+    "main.af168f32.js.map": "/watchlist-app/static/js/main.af168f32.js.map",
+    "453.53f0a819.chunk.js.map": "/watchlist-app/static/js/453.53f0a819.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73dd1aca.css",
+    "static/js/main.af168f32.js"
+  ]
+}
