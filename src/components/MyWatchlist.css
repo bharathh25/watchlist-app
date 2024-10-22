@@ -1,0 +1,74 @@
+/*MyWatchlist.css for MyWatchlist.js*/
+.my-watchlist-container {
+    padding: 80px;
+    text-align: center; 
+}
+
+.movie-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+    gap: 15px; /* Spacing between thumbnails */
+    justify-items: center; /* Center thumbnails within grid */
+}
+
+.movie-thumbnail {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s; 
+}
+
+.movie-thumbnail:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.movie-thumbnail img {
+    width: 100%; /* To fit image to thumbnail */
+    height: auto; 
+    object-fit: cover; /* To ensure the image fits within the thumbnail */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; /* Spacing between buttons */
+}
+
+.remove-button {
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 5px; 
+}
+
+.remove-button:hover {
+    background-color: #da190b; /* Darker red on hover */
+}
+
+.details-button {
+    background-color: white; 
+    color: hsl(0, 0%, 50%);
+    border: 2px grey;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 5px; 
+}
+
+.details-button:hover {
+    background-color: grey; 
+    color: white;
+    border: 2px white;
+}
+
+/* no movies message */
+.no-movies-message {
+    margin-top: 10px; 
+    text-align: center; 
+    display: flex; 
+    width: 100%;  
+}

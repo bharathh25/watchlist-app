@@ -1,0 +1,68 @@
+/*Header.css file for Header.js*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000080;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    height: 60px; 
+}
+
+.logo {
+    height: 40px;
+}
+
+.hello-note {
+    color: #fdfee9; /* colour of the hello note */
+    font-size: bold 18px; /* Font size of the hello note */
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-button {
+    margin-left: 20px;
+    color: navy; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;  
+    border: 2.5px solid #9e9e9b; /* Colour for th border */
+    border-radius: 5px; /* for the sake of corners */
+    background-color: white; /* white colour background */
+    transition: background-color 0.3s, color 0.3s; /*Transition */
+}
+
+.nav-button:hover {
+    background-color: navy; /* Change to background to navy on hover */
+    color: white; /* Change text color to white when hovered */
+}
+
+.nav-button.active {
+    background-color: navy; /* Change to navy blue colour when active */
+    color: #fdfee9; /* Change text color to white colour */
+}
+
+.logout-button {
+    margin-left: 20px;
+    font-weight: bold;
+    border: 1px solid white; 
+    color: white;
+    background-color: rgb(227, 16, 16); 
+    padding: 10px 15px; /* Adding padding for button effect */
+    border-radius: 5px; /* For slightly rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transition */
+}
+
+.logout-button:hover {
+    background-color: white; /* Change background on hover */
+    color:  rgb(179, 16, 16);
+    border: 1px solid ; 
+}

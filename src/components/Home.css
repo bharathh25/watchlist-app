@@ -1,0 +1,107 @@
+/* Home.css for Home.js*/
+.home-container {
+    padding: 80px;
+    text-align: center; /* To center the content within the container */
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    padding: 12px 20px; /* Padding for better visibility */
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px; 
+}
+
+.search-form button {
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 5px; 
+    background-color: navy; /* Button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-form button:hover {
+    background-color: #0407b4; /* Different colour on hover */
+}
+
+.movie-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* For better visibility */
+    gap: 15px; /* Spacing between thumbnails */
+}
+
+.movie-thumbnail {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s; /* Hover effect */
+}
+
+.movie-thumbnail:hover {
+    transform: scale(1.05); /* To slightly enlarge on hover */
+}
+
+.movie-thumbnail img {
+    width: 100%; /* To fit the image to thumbnail */
+    height: auto; /* To maintain aspect ratio */
+    object-fit: cover; /* To ensure the image fits within the thumbnail */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column; /* to place buttons vertically */
+    gap: 5px; /* Spacing between buttons */
+}
+
+.add-button {
+    background-color: #0725a0d6; 
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 5px; 
+}
+
+.add-button:hover {
+    background-color: #09106b; 
+}
+
+.remove-button {
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 5px; 
+}
+
+.remove-button:hover {
+    background-color: #da190b; /* Darker red on hover */
+}
+
+.details-button {
+    background-color: white;
+    color: hsl(0, 0%, 50%);
+    border: 2px grey;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 5px; 
+}
+
+.details-button:hover {
+    background-color: grey; 
+    color: white;
+    border: 2px white;
+}
